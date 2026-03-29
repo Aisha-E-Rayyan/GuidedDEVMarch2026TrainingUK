@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "68e2327f-828e-4d54-b721-e5614332df51",
+    "Name": "UsrYacht_MobileFormPage",
+    "ModifiedOnUtc": "\/Date(1774709762000)\/",
+    "Parent": {
+      "UId": "019c694a-1a3b-4812-b2e5-219b326061ae",
+      "Name": "MobilePageWithTabsFreedomTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Yacht mobile form page",
+    "DependsOn": []
+  }
+}
