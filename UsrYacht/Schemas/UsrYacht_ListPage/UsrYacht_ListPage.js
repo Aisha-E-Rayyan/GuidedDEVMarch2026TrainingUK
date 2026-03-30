@@ -30,14 +30,14 @@ define("UsrYacht_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 							"code": "PDS_UsrName",
 							"caption": "#ResourceString(PDS_UsrName)#",
 							"dataValueType": 1,
-							"width": 157
+							"width": 153
 						},
 						{
-							"id": "ff9be3f6-5393-4f81-66ae-d000abd80fff",
-							"code": "PDS_UsrColumn8",
-							"caption": "#ResourceString(PDS_UsrColumn8)#",
+							"id": "9f87b4a4-d3e3-6194-f745-166b10f49318",
+							"code": "PDS_UsrPrice",
+							"caption": "#ResourceString(PDS_UsrPrice)#",
 							"dataValueType": 31,
-							"width": 250
+							"width": 213
 						},
 						{
 							"id": "6a2f1292-408e-f158-0e65-0ad408f94807",
@@ -59,7 +59,21 @@ define("UsrYacht_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 							"caption": "#ResourceString(PDS_UsrDriveType)#",
 							"dataValueType": 10
 						}
-					]
+					],
+					"features": {
+						"rows": {
+							"selection": {
+								"enable": true,
+								"multiple": true
+							}
+						},
+						"editable": {
+							"enable": false,
+							"itemsCreation": false,
+							"floatingEditPanel": false
+						}
+					},
+					"visible": true
 				}
 			},
 			{
@@ -94,9 +108,9 @@ define("UsrYacht_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 							"path": "PDS.UsrName"
 						}
 					},
-					"PDS_UsrColumn8": {
+					"PDS_UsrPrice": {
 						"modelConfig": {
-							"path": "PDS.UsrColumn8"
+							"path": "PDS.UsrPrice"
 						}
 					},
 					"PDS_UsrStatus": {
@@ -127,8 +141,8 @@ define("UsrYacht_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				"values": {
 					"default": [
 						{
-							"direction": "desc",
-							"columnName": "UsrColumn8"
+							"direction": "asc",
+							"columnName": "UsrStatus"
 						}
 					]
 				}
@@ -148,8 +162,8 @@ define("UsrYacht_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 						"UsrName": {
 							"path": "UsrName"
 						},
-						"UsrColumn8": {
-							"path": "UsrColumn8"
+						"UsrPrice": {
+							"path": "UsrPrice"
 						},
 						"UsrStatus": {
 							"path": "UsrStatus"
